@@ -1,0 +1,10 @@
+{
+    "id": "spacehistory",
+    "name": "SpaceHistory",
+    "description": "Space history for the current user",
+    "keywords": ["spacehistory"],
+    "version": "0.0.1",
+    "humhub": {
+        "minVersion": "1.0"
+    }
+}
