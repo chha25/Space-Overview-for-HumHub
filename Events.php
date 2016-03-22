@@ -12,7 +12,7 @@ class Events extends \yii\base\Object
         
         if ($event->sender->user !== null && $event->sender->user->isModuleEnabled('spacehistory')) {
             $event->sender->addItem(array(
-                    'label' => "Space History", //Yii::t('', ''),
+                    'label' => Yii::t('SpacehistoryModule.overview_index', 'Space History'),
                     'url' => $event->sender->user->createUrl('/spacehistory/overview'),
                     'isActive' => (Yii::$app->controller->module && Yii::$app->controller->module->id == 'spacehistory')
                 ));
