@@ -27,7 +27,7 @@ class OverviewController extends ContentContainerController
 			switch($space->status)
 			{
 				case Space::STATUS_DISABLED:
-					array_push(disabled, $space);
+					array_push($disabled, $space);
 					break;
 				
 				case Space::STATUS_ENABLED:

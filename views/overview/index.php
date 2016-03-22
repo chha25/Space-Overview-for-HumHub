@@ -7,23 +7,37 @@ use humhub\modules\spacehistory\controllers\OverviewController;
 ?>
 
 <div class="panel panel-default">
-	<div class="panel-body">
-		<div>
-			<h1>Aktuelle Spaces</h1>
+  <div class="panel-heading"> <?php echo '<strong>Übersicht Spaces</strong>' ?></div>
+    <div class="panel-body">
+      <div class="heading"> <?php echo '<strong>Aktive Spaces</strong>' ?></div>
+        <div>
+            <ul>
+               <?php foreach($kindsOfSpaces[Space::STATUS_ENABLED] as $enabled){ ?>
+				<li>
+					<a href="<?php echo $enabled->getUrl(); ?>"><?php echo Html::encode($enabled->name); ?></a>
+				</li>
+			<?php } ?>
+            </ul>
+        </div>
+    
+	  <div class="heading"> <?php echo '<strong>Archivierte Spaces</strong>'    ?></div>
+        <div>
 			<ul>
-			<?php foreach($kindsOfSpaces[Space::STATUS_ENABLED] as $enabled){
-				echo '<li>'.$enabled->name.'</li>';
-			}
-			?>
+			<?php foreach($kindsOfSpaces[Space::STATUS_ARCHIVED] as $archived){ ?>
+				<li>
+					<a href="<?php echo $archived->getUrl(); ?>"><?php echo Html::encode($archived->name); ?></a>
+				</li>
+			<?php } ?>
 			</ul>
 		</div>
-		<div>
-			<h1>Archivierte Spaces</h1>
+      <div class="heading"> <?php echo '<strong>Disabled Spaces</strong>'    ?></div>
+        <div>
 			<ul>
-			<?php foreach($kindsOfSpaces[Space::STATUS_ARCHIVED] as $archived){
-				echo '<li>'.$archived->name.'</li>';
-			}
-			?>
+			<?php foreach($kindsOfSpaces[Space::STATUS_DISABLED] as $disabled){ ?>
+				<li>
+					<a href="<?php echo $disabled->getUrl(); ?>"><?php echo Html::encode($disabled->name); ?></a>
+				</li>
+			<?php } ?>
 			</ul>
 		</div>
 	</div>
