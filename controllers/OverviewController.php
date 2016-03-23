@@ -1,8 +1,8 @@
 <?php
 namespace humhub\modules\spaceoverview\controllers;
 
-use humhub\modules\space\models\space;
-use humhub\modules\space\models\membership;
+use humhub\modules\space\models\Space;
+use humhub\modules\space\models\Membership;
 use yii\web\Controller;
 use \humhub\modules\content\components\ContentContainerController;
 
