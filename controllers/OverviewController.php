@@ -1,5 +1,5 @@
 <?php
-namespace humhub\modules\spacehistory\controllers;
+namespace humhub\modules\spaceoverview\controllers;
 
 use humhub\modules\space\models\space;
 use humhub\modules\space\models\membership;

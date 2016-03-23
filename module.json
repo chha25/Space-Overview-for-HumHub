@@ -1,8 +1,8 @@
 {
-    "id": "spacehistory",
-    "name": "SpaceHistory",
-    "description": "Space history for the current user",
-    "keywords": ["spacehistory"],
+    "id": "spaceoverview",
+    "name": "SpaceOverview",
+    "description": "Space overview for the current user",
+    "keywords": ["spaceoverview"],
     "version": "0.0.1",
     "humhub": {
         "minVersion": "1.0"

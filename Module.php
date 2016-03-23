@@ -1,6 +1,6 @@
 <?php
 
-namespace humhub\modules\spacehistory;
+namespace humhub\modules\spaceoverview;
 
 use Yii;
 use humhub\modules\space\models\Space;
