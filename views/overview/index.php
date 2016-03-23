@@ -3,13 +3,13 @@ use yii\helpers\Url;
 use yii\helpers\Html;
 use humhub\modules\space\models\space;
 
-use humhub\modules\spacehistory\controllers\OverviewController;
+use humhub\modules\spaceoverview\controllers\OverviewController;
 ?>
 
 <div class="panel panel-default">
-  <div class="panel-heading"> <?php echo Yii::t('SpacehistoryModule.overview_index','<strong>Overview Spaces</strong>') ?></div>
+  <div class="panel-heading"> <?php echo Yii::t('SpaceoverviewModule.overview_index','<strong>Overview Spaces</strong>') ?></div>
     <div class="panel-body">
-      <div class="heading"> <?php echo Yii::t('SpacehistoryModule.overview_index','<strong>Active Spaces</strong>') ?></div>
+      <div class="heading"> <?php echo Yii::t('SpaceoverviewModule.overview_index','<strong>Active Spaces</strong>') ?></div>
         <div>
             <ul>
                <?php foreach($kindsOfSpaces[Space::STATUS_ENABLED] as $enabled){ ?>
@@ -20,7 +20,7 @@ use humhub\modules\spacehistory\controllers\OverviewController;
             </ul>
         </div>
     
-	  <div class="heading"> <?php echo Yii::t('SpacehistoryModule.overview_index','<strong>Archivierte Spaces</strong>') ?></div>
+	  <div class="heading"> <?php echo Yii::t('SpaceoverviewModule.overview_index','<strong>Archivierte Spaces</strong>') ?></div>
         <div>
 			<ul>
 			<?php foreach($kindsOfSpaces[Space::STATUS_ARCHIVED] as $archived){ ?>
@@ -30,7 +30,7 @@ use humhub\modules\spacehistory\controllers\OverviewController;
 			<?php } ?>
 			</ul>
 		</div>
-      <div class="heading"> <?php echo Yii::t('SpacehistoryModule.overview_index','<strong>Disabled Spaces</strong>') ?></div>
+      <div class="heading"> <?php echo Yii::t('SpaceoverviewModule.overview_index','<strong>Disabled Spaces</strong>') ?></div>
         <div>
 			<ul>
 			<?php foreach($kindsOfSpaces[Space::STATUS_DISABLED] as $disabled){ ?>

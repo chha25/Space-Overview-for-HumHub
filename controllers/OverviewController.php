@@ -10,7 +10,8 @@ class OverviewController extends ContentContainerController
 {
     public function actionIndex()
     {
-		$userSpaces = Membership::GetUserSpaces();
+		$userSpaces = Membership::GetUserSpaces($this->getUser()->id);
+
 		$kindsOfSpaces = $this->getKindsOfSpaces($userSpaces);
 		
         return $this->render('index', ['contentContainer' => $this->contentContainer,
