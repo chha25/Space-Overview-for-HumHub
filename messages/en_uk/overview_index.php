@@ -1,6 +1,6 @@
 <?php
 return [
-    'Space History' =>'', 
+    'Space Overview' =>'', 
     '<strong>Overview Spaces</strong>' => '',
     '<strong>Active Spaces</strong>' => '',
     '<strong>Archived Spaces</strong>' =>'',
