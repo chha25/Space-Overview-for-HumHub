@@ -20,7 +20,7 @@ use humhub\modules\spaceoverview\controllers\OverviewController;
             </ul>
         </div>
     
-	  <div class="heading"> <?php echo Yii::t('SpaceoverviewModule.overview_index','<strong>Archivierte Spaces</strong>') ?></div>
+	  <div class="heading"> <?php echo Yii::t('SpaceoverviewModule.overview_index','<strong>Archived Spaces</strong>') ?></div>
         <div>
 			<ul>
 			<?php foreach($kindsOfSpaces[Space::STATUS_ARCHIVED] as $archived){ ?>
